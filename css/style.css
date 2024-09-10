@@ -120,6 +120,17 @@ form {
 
   padding: 0px;
 }
+.input-text::placeholder {
+  color: black; /* Couleur du placeholder en noir */
+}
+
+.input-button::after {
+  content: "\f3c5"; /* Code Unicode pour l'icône de localisation de Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: black;
+  font-size: medium;
+}
 .button-search-1 {
   height: 48px;
   width: 120px;
@@ -132,20 +143,8 @@ form {
   border: none;
   padding: 0px;
 }
-.button-search-2 {
-  height: 49px;
-  width: 49px;
-  background-color: #0065fc;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  font-weight: bold;
-  font-size: medium;
-  color: white;
-  border: none;
-  padding: 0px;
-}
-.button-search-2 {
-  display: none;
+.button-search-1::after {
+  content: "Rechercher";
 }
 .filtres {
   display: flex;
@@ -169,6 +168,8 @@ form {
   gap: 15px;
 }
 .btn-filtre {
+  display: flex;
+  align-items: center;
   border: solid 2px #f2f2f2;
   border-radius: 25px;
   background: white;
@@ -183,6 +184,9 @@ form {
 }
 .ico {
   padding: 5px;
+}
+.ico i {
+  font-size: 20px;
 }
 .info-bar {
   display: flex;
@@ -509,18 +513,23 @@ li {
   header {
     width: 375px;
     height: 115px;
+    border-bottom: solid 1px #f2f2f2;
+    margin-bottom: 27px;
   }
 
   nav {
     flex-direction: column;
-    height: 36px;
+    height: 79px;
   }
   .logo {
+    width: 100%;
     height: 79px;
     justify-content: center;
     align-items: center;
   }
   .menu {
+    margin-top: 40px;
+    margin-bottom: 0px;
     justify-content: center;
     gap: 15px;
   }
@@ -532,7 +541,7 @@ li {
     width: 100%;
 
     margin-bottom: 0px;
-
+    align-items: center;
     justify-content: center;
   }
   nav button:hover {
@@ -556,9 +565,25 @@ li {
     height: 23px;
     margin-top: 20px;
   }
-
+  .input-text {
+    width: 225px;
+  }
   .button-search-1 {
-    display: none;
+    height: 49px;
+    width: 49px;
+    background-color: #0065fc;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    border: none;
+    padding: 0px;
+  }
+  .button-search-1::after {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
   }
   form {
     width: 100%;
@@ -574,7 +599,7 @@ li {
     padding: 35px 0px 0px 0px;
   }
   .filtres-container {
-    width: 100%;
+    width: 335px;
 
     box-sizing: border-box;
 
@@ -584,7 +609,12 @@ li {
   .btn-filtre {
     width: 163px;
     font-size: small;
-    gap: 20px;
+
+    justify-content: start;
+  }
+  .ico {
+    padding: 0px;
+    margin-right: 15px;
   }
 
   .hebergements-and-populaires section {
