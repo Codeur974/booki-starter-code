@@ -19,15 +19,28 @@ body {
 }
 header {
   width: 100%;
-}
-nav {
-  width: 100%;
-
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 79px;
 }
+nav {
+  display: flex;
+  height: 35px;
+  width: 344px;
+  gap: 68px;
+  align-items: end;
+  justify-content: end;
+}
+nav a {
+  padding: 0px;
+  transition: color 0.3s, border-top 0.3s;
+  cursor: pointer;
+}
+nav a:hover {
+  color: #0065fc;
+  border-top: solid 1px #0065fc;
+  padding-top: 15px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -39,32 +52,7 @@ nav {
   width: 61.9px;
   height: 19px;
 }
-.menu {
-  width: 344px;
-  height: 35px;
-  display: flex;
-  gap: 68px;
-  margin-bottom: 40px;
-  justify-content: end;
-}
-.nav button {
-  border: none;
-  background-color: white;
 
-  font-size: medium;
-  padding: 0px;
-}
-button a {
-  display: flex;
-  align-items: end;
-  height: 39px;
-  margin-bottom: 40px;
-}
-
-nav button:hover {
-  border-top: solid #0065fc;
-  color: #0065fc;
-}
 .bloc-filtres {
   display: flex;
   flex-direction: row;
@@ -512,50 +500,47 @@ li {
     padding: 0px;
   }
   header {
-    width: 375px;
+    flex-direction: column;
+    width: 100%;
     height: 115px;
     border-bottom: solid 1px #f2f2f2;
     margin-bottom: 27px;
   }
-
   nav {
-    flex-direction: column;
-    height: 79px;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    gap: 0px;
   }
+  nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav a:hover {
+    color: #0065fc;
+    border-top: none;
+    padding-top: 0px; /* Ajoutez un padding pour éviter le sursaut */
+    border-bottom: solid 2px #0065fc;
+    padding-bottom: 15px;
+  }
+
   .logo {
     width: 100%;
     height: 79px;
     justify-content: center;
     align-items: center;
   }
-  .menu {
-    margin-top: 40px;
-    margin-bottom: 0px;
-    justify-content: center;
-    gap: 15px;
-  }
-  nav button {
-    width: 100%;
-    height: 56px;
-  }
-  button a {
-    width: 100%;
 
-    margin-bottom: 0px;
-    align-items: center;
-    justify-content: center;
-  }
-  nav button:hover {
-    border-top: none;
-    border-bottom: solid #0065fc;
-    color: #0065fc;
-  }
   .info-group {
     width: 335px;
     height: 460px;
     padding: 0px 20px;
     gap: 35px;
     margin-top: 0px;
+  }
+  .info-title h2 {
+    font-size: 22px;
   }
 
   .info-bar {
@@ -579,6 +564,7 @@ li {
     color: white;
     border: none;
     padding: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ajout de l'ombre en bas */
   }
   .button-search-1::after {
     content: "\f002";
