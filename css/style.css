@@ -107,7 +107,7 @@ nav a:hover {
 }
 
 .info-group {
-  width: 1340;
+  width: 1340px;
   display: flex;
   flex-direction: column;
   gap: 35px;
