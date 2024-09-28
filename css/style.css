@@ -12,10 +12,12 @@
 .fa-solid {
   color: var(--main-color);
 }
+
 body {
   display: flex;
   justify-content: center;
 }
+
 .main-container {
   width: 100%;
   height: auto;
@@ -61,6 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 nav {
   display: flex;
   height: 35px;
@@ -69,11 +72,12 @@ nav {
   align-items: end;
   justify-content: end;
 }
+
 nav a {
   padding: 0px;
-
   cursor: pointer;
 }
+
 nav a:hover {
   color: #0065fc;
   border-top: solid 2px #0065fc;
@@ -87,18 +91,20 @@ nav a:hover {
   height: 79px;
   gap: 10px;
 }
+
 .logo-dim {
   width: 61.9px;
   height: 19px;
 }
 .bloc-filtres {
   display: flex;
-  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-  gap: 20px; /* Ajoutez un espacement entre les éléments */
-  width: 100%; /* Assurez-vous que le bloc filtres prend toute la largeur disponible */
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
   box-sizing: border-box;
   align-items: center;
 }
+
 .bloc-button {
   display: flex;
   flex-wrap: wrap;
@@ -118,16 +124,17 @@ nav a:hover {
 .info-title h2,
 p {
   margin: 8px 0px;
-  word-wrap: break-word; /* Permet de passer à la ligne automatiquement */
-  overflow-wrap: break-word; /* Supporte les anciens navigateurs */
-  width: 100%; /* Assurez-vous que l'élément prend toute la largeur disponible */
-  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
 input {
   height: 49px;
   border: none;
@@ -160,21 +167,22 @@ form {
   text-align: center;
   font-weight: bold;
   font-size: medium;
-
   padding: 0px;
 }
+
 .input-text::placeholder {
-  color: black; /* Couleur du placeholder en noir */
+  color: black;
   font-size: 18px;
 }
 
 .input-button::after {
-  content: "\f3c5"; /* Code Unicode pour l'icône de localisation de Font Awesome */
+  content: "\f3c5";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: black;
   font-size: 20px;
 }
+
 .button-search-1 {
   height: 48px;
   width: 120px;
@@ -188,16 +196,18 @@ form {
   padding: 0px;
   cursor: pointer;
 }
+
 .button-search-1::after {
   content: "Rechercher";
 }
+
 .bloc-filtres {
   display: flex;
-
-  gap: 20px; /* Ajoutez un espacement entre les éléments */
-  width: 100%; /* Assurez-vous que le bloc filtres prend toute la largeur disponible */
+  gap: 20px;
+  width: 100%;
   box-sizing: border-box;
 }
+
 .bloc-button {
   width: 658px;
   justify-content: start;
@@ -220,17 +230,19 @@ form {
 .btn-filtre:hover {
   background-color: #deebff;
 }
+
 .ico {
   margin-right: 10px;
 }
+
 .btn-filtre i {
   font-size: 20px;
 }
+
 .info-bar {
   display: flex;
   align-items: center;
   height: 24px;
-
   gap: 10px;
 }
 
@@ -241,13 +253,14 @@ form {
   border: solid 1px #d9d9d9;
   border-radius: 100%;
   margin: 0px;
-
   align-items: center;
 }
+
 .ellips i {
   font-size: 12px;
   margin: auto;
 }
+
 .ico-ellips {
   margin: auto;
 }
@@ -264,25 +277,28 @@ form {
   padding: 30px;
   box-sizing: border-box;
 }
-
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
 }
+
 .hebergements-title {
   display: flex;
   align-items: center;
 }
+
 .hebergements-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
-  gap: 30px; /* Espacement entre les cartes */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   margin-top: 33px;
 }
+
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
 }
+
 .hebergements-cards img {
   width: 100%;
   height: 114px;
@@ -290,6 +306,7 @@ form {
   border-top-right-radius: 20px;
   box-sizing: border-box;
 }
+
 .hebergements-cards .card-content {
   width: 100%;
   padding-left: 15px;
@@ -298,6 +315,7 @@ form {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 .hebergements-cards .card-title {
   margin-top: 10px;
   margin-bottom: 6px;
@@ -310,6 +328,7 @@ form {
 .hebergements-cards .card-rating {
   margin: 5px 0;
 }
+
 .hebergements h3 {
   margin: 0px;
 }
@@ -366,10 +385,11 @@ form {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
 .activites-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Trois colonnes */
-  gap: 30px; /* Espacement entre les cartes */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 .activites-title {
@@ -457,8 +477,8 @@ li {
   }
   .bloc-filtres {
     width: 100%;
-    max-width: 100%; /* Assurez-vous que la largeur maximale ne dépasse pas 100% */
-    box-sizing: border-box; /* Incluez le padding et la bordure dans la largeur totale */
+    max-width: 100%;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: start;
     gap: 0;
@@ -476,11 +496,8 @@ li {
   }
   .hebergements-cards {
     display: grid;
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* Ajuste automatiquement les colonnes */
-    gap: 33px; /* Espacement entre les cartes */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
   }
 
   .populaires {
@@ -558,7 +575,7 @@ li {
   nav a:hover {
     color: #0065fc;
     border-top: none;
-    padding-top: 0px; /* Ajoutez un padding pour éviter le sursaut */
+    padding-top: 0px;
     border-bottom: solid 2px #0065fc;
     padding-bottom: 15px;
   }
@@ -603,7 +620,7 @@ li {
     color: white;
     border: none;
     padding: 0px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ajout de l'ombre en bas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
   .button-search-1::after {
     content: "\f002";
